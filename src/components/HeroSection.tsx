@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
 import samagamLogo from "@/assets/samagam-logo.png";
 import klsLogo from "@/assets/kls-logo.png";
 import imerLogo from "@/assets/imer-logo.png";
@@ -7,10 +6,7 @@ import imerLogo from "@/assets/imer-logo.png";
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="Kurukshetra battlefield" className="w-full h-full object-cover" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/60" />
 
       <div className="relative z-10 container mx-auto px-6 text-center">
         <motion.div
