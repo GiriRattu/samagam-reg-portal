@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+
+const SocialIcon = ({ children, href }: { children: React.ReactNode; href: string }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors">
+    <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">{children}</svg>
+  </a>
+);
 
 const ContactSection = () => {
   return (
