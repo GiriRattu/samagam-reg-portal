@@ -44,12 +44,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="w-full border-t border-gold/10 py-1.5">
-        <p className="text-center font-heading text-[10px] md:text-xs tracking-[0.15em] uppercase text-foreground/50">
-          KLS Institute of Management Education & Research, Hindwadi, Belagavi
-        </p>
-      </div>
-
       <AnimatePresence>
         {isOpen && (
           <motion.div

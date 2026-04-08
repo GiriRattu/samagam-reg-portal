@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -23,53 +23,6 @@ const ContactSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-8"
-          >
-            <div>
-              <h3 className="font-heading text-xl text-foreground mb-4">Key People</h3>
-              <div className="space-y-4 font-body text-sm">
-                <div>
-                  <p className="text-muted-foreground uppercase font-accent text-xs tracking-widest">Director, KLS IMER</p>
-                  <p className="text-foreground text-lg font-heading">Dr. Arif Shaikh</p>
-                </div>
-                <div>
-                  <p className="text-muted-foreground uppercase font-accent text-xs tracking-widest">Faculty Coordinators</p>
-                  <p className="text-foreground text-lg font-heading">Prof. Goutami Maganur</p>
-                  <p className="text-foreground text-lg font-heading">Prof. Rashmi Harti</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="font-heading text-xl text-foreground mb-4">Registration Department</h3>
-              <div className="space-y-3 font-body text-foreground">
-                <div>
-                  <p className="text-lg font-heading">Giri Rattu</p>
-                  <a href="tel:6362239058" className="font-accent text-sm text-primary hover:text-gold-light transition-colors">6362239058</a>
-                </div>
-                <div>
-                  <p className="text-lg font-heading">Aadhya Bhat</p>
-                  <a href="tel:7676288787" className="font-accent text-sm text-primary hover:text-gold-light transition-colors">7676288787</a>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="font-heading text-xl text-foreground mb-4">Student Coordinators</h3>
-              <div className="grid grid-cols-2 gap-2 font-heading text-foreground">
-                <p>Sahard Dongre</p>
-                <p>Prajyot Ashtekar</p>
-                <p>Prajwal Joshi</p>
-                <p>Rajshree Bhadache</p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
             className="space-y-6"
           >
             <div className="flex items-start gap-4">
@@ -86,10 +39,12 @@ const ContactSection = () => {
             <div className="flex items-start gap-4">
               <Phone className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
-                <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Phone</p>
+                <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Registration Department</p>
                 <p className="font-heading text-foreground">
-                  <a href="tel:6362239058" className="hover:text-primary transition-colors">6362239058</a> (Giri Rattu)<br />
-                  <a href="tel:7676288787" className="hover:text-primary transition-colors">7676288787</a> (Aadhya Bhat)
+                  Giri Rattu — <a href="tel:6362239058" className="text-primary hover:text-gold-light transition-colors">6362239058</a>
+                </p>
+                <p className="font-heading text-foreground">
+                  Aadhya Bhat — <a href="tel:7676288787" className="text-primary hover:text-gold-light transition-colors">7676288787</a>
                 </p>
               </div>
             </div>
@@ -105,6 +60,30 @@ const ContactSection = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Social Media Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Follow Us</p>
+          <div className="flex justify-center gap-6">
+            <a href="https://www.instagram.com/klsimer_official/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors">
+              <Instagram className="w-7 h-7" />
+            </a>
+            <a href="https://www.facebook.com/klsimer/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors">
+              <Facebook className="w-7 h-7" />
+            </a>
+            <a href="https://www.youtube.com/@klsimer" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors">
+              <Youtube className="w-7 h-7" />
+            </a>
+            <a href="https://www.linkedin.com/school/kls-imer/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors">
+              <Linkedin className="w-7 h-7" />
+            </a>
+          </div>
+        </motion.div>
       </div>
 
       {/* Footer */}
