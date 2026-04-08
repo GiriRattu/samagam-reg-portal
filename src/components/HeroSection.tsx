@@ -13,17 +13,22 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-center gap-6 mb-6"
+          className="flex items-center justify-center gap-6 mb-4"
         >
           <img src={klsLogo} alt="KLS" className="h-16 md:h-20 w-auto" />
-          <div className="hidden sm:block text-center">
-            <p className="font-accent text-xs tracking-[0.3em] uppercase text-foreground/60">The Karnataka Law Society's</p>
-            <h2 className="font-heading text-sm md:text-base tracking-[0.15em] uppercase text-foreground/90">
-              Institute of Management Education & Research
-            </h2>
-            <p className="font-accent text-xs tracking-[0.2em] text-foreground/50">(Autonomous, Belagavi)</p>
-          </div>
           <img src={imerLogo} alt="IMER" className="h-16 md:h-20 w-auto" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="mb-6"
+        >
+          <h2 className="font-heading text-xl md:text-3xl lg:text-4xl tracking-[0.1em] uppercase text-gold-gradient mb-1">
+            KLS Institute of Management Education & Research
+          </h2>
+          <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50">(Autonomous, Hindwadi, Belagavi)</p>
         </motion.div>
 
         <motion.p
@@ -57,18 +62,44 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-8 py-3 border border-primary/40 rounded-sm bg-background/40 backdrop-blur-sm"
+          className="inline-flex items-center gap-2 px-8 py-3 border border-primary/40 rounded-sm bg-background/40 backdrop-blur-sm mb-10"
         >
           <span className="font-heading text-2xl md:text-3xl text-gold-gradient">
             29<sup className="text-sm">th</sup> & 30<sup className="text-sm">th</sup> April 2026
           </span>
         </motion.div>
 
+        {/* Director & Coordinators */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.1, duration: 0.8 }}
+          className="max-w-3xl mx-auto mb-10 space-y-6"
+        >
+          <div>
+            <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Director, KLS IMER</p>
+            <p className="font-heading text-lg md:text-xl text-foreground">Dr. Arif Shaikh</p>
+          </div>
+          <div>
+            <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Faculty Coordinators</p>
+            <p className="font-heading text-lg text-foreground">Asst. Prof. Goutami Maganur</p>
+            <p className="font-heading text-lg text-foreground">Asst. Prof. Rashmi Harti</p>
+          </div>
+          <div>
+            <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Student Coordinators</p>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-1">
+              <p className="font-heading text-foreground">Sahard Dongre</p>
+              <p className="font-heading text-foreground">Prajyot Ashtekar</p>
+              <p className="font-heading text-foreground">Prajwal Joshi</p>
+              <p className="font-heading text-foreground">Rajshree Bhadache</p>
+            </div>
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3 }}
-          className="mt-10"
         >
           <button
             onClick={() => document.getElementById("registration")?.scrollIntoView({ behavior: "smooth" })}
