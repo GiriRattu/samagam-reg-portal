@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
 import samagamLogo from "@/assets/samagam-logo.png";
 import klsLogo from "@/assets/kls-logo.png";
 import imerLogo from "@/assets/imer-logo.png";
