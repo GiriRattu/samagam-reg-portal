@@ -1,10 +1,10 @@
 import Navbar from "@/components/Navbar";
-import heroBg from "@/assets/hero-bg.jpg";
 import HeroSection from "@/components/HeroSection";
 import EventsSection from "@/components/EventsSection";
 import BrochureSection from "@/components/BrochureSection";
 import RegistrationSection from "@/components/RegistrationSection";
 import ContactSection from "@/components/ContactSection";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
   return (
