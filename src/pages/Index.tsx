@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import heroBg from "@/assets/hero-bg.jpg";
 import HeroSection from "@/components/HeroSection";
 import EventsSection from "@/components/EventsSection";
 import BrochureSection from "@/components/BrochureSection";
