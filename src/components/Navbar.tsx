@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-gold/20" : "bg-transparent"}`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsl(0_0%_0%)] border-b border-gold/20">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => scrollTo("home")} className="flex items-center gap-3">
           <img src={samagamLogo} alt="Samagam" className="h-10 w-auto" />
