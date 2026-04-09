@@ -47,10 +47,10 @@ const ContactSection = () => {
               <div>
                 <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Registration Department</p>
                 <p className="font-heading text-foreground">
-                  Giri Rattu — <a href="tel:6362239058" className="text-primary hover:text-gold-light transition-colors">6362239058</a>
+                  Giri Rattu — <a href="tel:+916362239058" className="text-primary hover:text-gold-light transition-colors">+91 63622 39058</a>
                 </p>
                 <p className="font-heading text-foreground">
-                  Aadhya Bhat — <a href="tel:7676288787" className="text-primary hover:text-gold-light transition-colors">7676288787</a>
+                  Aadhya Bhat — <a href="tel:+917676288787" className="text-primary hover:text-gold-light transition-colors">+91 76762 88787</a>
                 </p>
               </div>
             </div>
