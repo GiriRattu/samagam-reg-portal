@@ -54,7 +54,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
           className="mb-6"
         >
-          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-52 md:h-72 lg:h-96 w-auto animate-float" />
+          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-60 md:h-80 lg:h-[28rem] w-auto animate-float" />
         </motion.div>
 
         <motion.p
