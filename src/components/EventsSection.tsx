@@ -4,13 +4,12 @@ import eventHumanResources from "@/assets/event-human-resources.png";
 import eventMarketing from "@/assets/event-marketing.png";
 import eventFinance from "@/assets/event-finance.png";
 import eventPublicRelations from "@/assets/event-public-relations.png";
-import eventPhotography from "@/assets/event-photography.png";
+import eventCreativeClick from "@/assets/event-photography.png";
 import eventKalakruti from "@/assets/event-kalakruti.png";
 import eventEgaming from "@/assets/event-egaming.png";
-import eventTeamEvents from "@/assets/event-team-events.png";
+import eventTreasureHunt from "@/assets/event-team-events.png";
 import eventGroupDance from "@/assets/event-group-dance.png";
 import eventRampWalk from "@/assets/event-ramp-walk.png";
-import chakravyuha from "@/assets/chakravyuha.png";
 
 const individualEvents = [
   { name: "Best Manager", members: 1, image: eventBestManager, desc: "Prove your mettle as the ultimate leader. One warrior, one throne." },
@@ -18,13 +17,13 @@ const individualEvents = [
   { name: "Marketing", members: 2, image: eventMarketing, desc: "Unleash your strategic prowess. Conquer markets with divine persuasion." },
   { name: "Finance", members: 2, image: eventFinance, desc: "Navigate the vaults of wealth. Command resources with foresight." },
   { name: "Public Relations", members: 2, image: eventPublicRelations, desc: "Shape narratives and build alliances. The voice of the empire." },
-  { name: "Photography", members: 1, image: eventPhotography, desc: "Capture moments that echo through eternity. One frame, one story." },
+  { name: "Creative Click", members: 1, image: eventCreativeClick, desc: "Capture moments that echo through eternity. One frame, one story." },
   { name: "Kalakruti", members: 2, image: eventKalakruti, desc: "Express the soul through art. Creative mastery on the battlefield." },
   { name: "E-Gaming", members: 2, image: eventEgaming, desc: "Dominate the digital arena. Virtual warriors, real glory." },
 ];
 
 const teamEvents = [
-  { name: "Team Events", image: eventTeamEvents, desc: "Unite as one force. Collective strength conquers all challenges." },
+  { name: "Treasure Hunt", image: eventTreasureHunt, desc: "Navigate the Chakravyuha. Solve riddles and claim hidden glory." },
   { name: "Group Dance", image: eventGroupDance, desc: "Move in harmony. Let rhythm become your weapon of expression." },
   { name: "Ramp Walk", image: eventRampWalk, desc: "Walk the path of style. Command the stage with grace and power." },
 ];
@@ -55,16 +54,6 @@ const EventsSection = () => {
           <div className="w-24 h-px bg-primary/50 mx-auto" />
         </motion.div>
 
-        {/* Chakravyuha - Treasure Hunt highlight */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="flex justify-center mb-16"
-        >
-          <img src={chakravyuha} alt="Chakravyuha - Treasure Hunt" loading="lazy" className="h-28 md:h-40 w-auto" />
-        </motion.div>
-
         <div className="mb-16">
           <motion.h3
             initial={{ opacity: 0 }}
@@ -85,7 +74,7 @@ const EventsSection = () => {
                 viewport={{ once: true }}
                 className="group relative bg-card border border-border hover:border-primary/40 rounded-sm p-5 transition-all duration-500 hover:glow-gold flex flex-col items-center text-center"
               >
-                <img src={event.image} alt={event.name} loading="lazy" width={896} height={512} className="w-full h-auto max-h-32 object-contain mb-4" />
+                <img src={event.image} alt={event.name} loading="lazy" className="w-full h-auto max-h-32 object-contain mb-4" />
                 <span className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-2">
                   Team of {event.members}
                 </span>
@@ -115,7 +104,7 @@ const EventsSection = () => {
                 viewport={{ once: true }}
                 className="group relative bg-card border border-primary/20 hover:border-primary/50 rounded-sm p-5 text-center transition-all duration-500 hover:glow-gold flex flex-col items-center"
               >
-                <img src={event.image} alt={event.name} loading="lazy" width={896} height={512} className="w-full h-auto max-h-32 object-contain mb-4" />
+                <img src={event.image} alt={event.name} loading="lazy" className="w-full h-auto max-h-32 object-contain mb-4" />
                 <p className="font-body text-sm text-muted-foreground italic">{event.desc}</p>
               </motion.div>
             ))}

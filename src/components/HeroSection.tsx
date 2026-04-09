@@ -5,31 +5,32 @@ import imerLogo from "@/assets/imer-logo.png";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/60" />
 
       <div className="relative z-10 container mx-auto px-6 text-center">
+        {/* College logos + name */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-center gap-6 mb-4"
+          className="flex items-center justify-center gap-4 md:gap-6 mb-6"
         >
-          <img src={klsLogo} alt="KLS" className="h-16 md:h-20 w-auto" />
-          <img src={imerLogo} alt="IMER" className="h-16 md:h-20 w-auto" />
+          <img src={klsLogo} alt="KLS" className="h-14 md:h-20 w-auto" />
+          <h2 className="font-heading text-lg md:text-3xl lg:text-4xl tracking-[0.08em] uppercase text-gold-gradient leading-tight">
+            KLS Institute of Management<br />Education & Research
+          </h2>
+          <img src={imerLogo} alt="IMER" className="h-14 md:h-20 w-auto" />
         </motion.div>
 
-        <motion.div
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="mb-6"
+          className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-4"
         >
-          <h2 className="font-heading text-xl md:text-3xl lg:text-4xl tracking-[0.1em] uppercase text-gold-gradient mb-1">
-            KLS Institute of Management Education & Research
-          </h2>
-          <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50">(Autonomous, Hindwadi, Belagavi)</p>
-        </motion.div>
+          (Autonomous, Hindwadi, Belagavi)
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0 }}
