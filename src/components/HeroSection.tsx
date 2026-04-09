@@ -25,30 +25,17 @@ const HeroSection = () => {
           <img src={imerLogo} alt="IMER" className="h-14 md:h-20 w-auto" />
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.15, duration: 0.8 }}
-          className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-1"
-        >
-          (Autonomous)
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-2"
-        >
-          Hindwadi, Belgavi
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.25, duration: 0.8 }}
+          transition={{ delay: 0.15, duration: 0.8 }}
           className="flex items-center justify-center gap-4 md:gap-8 mb-4"
         >
           <img src={years35Logo} alt="35 Years" className="h-10 md:h-14 w-auto" />
+          <div className="text-center">
+            <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-0.5">(Autonomous)</p>
+            <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50">Hindwadi, Belgavi</p>
+          </div>
           <img src={naacLogo} alt="NAAC A Grade" className="h-10 md:h-14 w-auto" />
         </motion.div>
 
