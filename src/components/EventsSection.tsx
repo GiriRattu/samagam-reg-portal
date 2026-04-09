@@ -8,8 +8,7 @@ import eventCreativeClick from "@/assets/event-photography.png";
 import eventKalakruti from "@/assets/event-kalakruti.png";
 import eventEgaming from "@/assets/event-egaming.png";
 import eventTreasureHunt from "@/assets/event-team-events.png";
-import eventGroupDance from "@/assets/event-group-dance.png";
-import eventRampWalk from "@/assets/event-ramp-walk.png";
+import eventCulturals from "@/assets/event-group-dance.png";
 
 const individualEvents = [
   { name: "Best Manager", members: 1, image: eventBestManager, desc: "Prove your mettle as the ultimate leader. One warrior, one throne." },
@@ -24,8 +23,7 @@ const individualEvents = [
 
 const teamEvents = [
   { name: "Treasure Hunt", image: eventTreasureHunt, desc: "Navigate the Chakravyuha. Solve riddles and claim hidden glory." },
-  { name: "Group Dance", image: eventGroupDance, desc: "Move in harmony. Let rhythm become your weapon of expression." },
-  { name: "Ramp Walk", image: eventRampWalk, desc: "Walk the path of style. Command the stage with grace and power." },
+  { name: "Culturals", image: eventCulturals, desc: "Dance, walk, and express. Unite rhythm and style on the grand stage." },
 ];
 
 const cardVariants = {
@@ -93,7 +91,7 @@ const EventsSection = () => {
           >
             Group Participation Events
           </motion.h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {teamEvents.map((event, i) => (
               <motion.div
                 key={event.name}

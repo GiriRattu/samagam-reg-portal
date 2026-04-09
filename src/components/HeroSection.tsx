@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import samagamLogo from "@/assets/samagam-logo.png";
 import klsLogo from "@/assets/kls-logo.png";
 import imerLogo from "@/assets/imer-logo.png";
+import naacLogo from "@/assets/naac.png";
+import years35Logo from "@/assets/35-years.png";
 
 const HeroSection = () => {
   return (
@@ -17,7 +19,7 @@ const HeroSection = () => {
           className="flex items-center justify-center gap-4 md:gap-6 mb-6"
         >
           <img src={klsLogo} alt="KLS" className="h-14 md:h-20 w-auto" />
-          <h2 className="font-heading text-lg md:text-3xl lg:text-4xl tracking-[0.08em] uppercase text-gold-gradient leading-tight">
+          <h2 className="font-heading text-xl md:text-4xl lg:text-5xl tracking-[0.08em] uppercase text-gold-gradient leading-tight">
             KLS Institute of Management<br />Education & Research
           </h2>
           <img src={imerLogo} alt="IMER" className="h-14 md:h-20 w-auto" />
@@ -26,11 +28,29 @@ const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-4"
+          transition={{ delay: 0.15, duration: 0.8 }}
+          className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-1"
         >
-          (Autonomous, Hindwadi, Belagavi)
+          (Autonomous)
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-2"
+        >
+          Hindwadi, Belgavi
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.25, duration: 0.8 }}
+          className="flex items-center justify-center gap-4 md:gap-8 mb-4"
+        >
+          <img src={years35Logo} alt="35 Years" className="h-10 md:h-14 w-auto" />
+          <img src={naacLogo} alt="NAAC A Grade" className="h-10 md:h-14 w-auto" />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -47,7 +67,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
           className="mb-6"
         >
-          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-40 md:h-64 lg:h-80 w-auto animate-float" />
+          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-52 md:h-72 lg:h-96 w-auto animate-float" />
         </motion.div>
 
         <motion.p
