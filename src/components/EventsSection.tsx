@@ -12,65 +12,65 @@ import eventCulturals from "@/assets/event-group-dance.png";
 
 const individualEvents = [
   {
-    name: "Best Manager",
+    name: "Dharmaraj — Best Manager",
     members: 1,
     image: eventBestManager,
-    desc: "A rigorous multi-round competition testing leadership, decision-making, aptitude, stress management, and overall managerial competence. Rounds include aptitude tests, extempore, stress interviews, and task-based challenges."
+    desc: "The Dharmaraj event tests the qualities of an ideal manager — fair decision-making, leadership, confidence, and strong judgment. Through structured rounds, participants showcase presence of mind, adaptability, and problem-solving skills. The one who performs with balance, intelligence, and leadership earns the title of Dharmaraj."
   },
   {
-    name: "Human Resources",
+    name: "Dronacharya — Human Resources",
     members: 2,
     image: eventHumanResources,
-    desc: "Explore the world of people management through case study analysis, role plays, HR policy drafting, and mock recruitment drives. Demonstrate strategic thinking in talent acquisition and employee engagement."
+    desc: "Inspired by the great mentor Dronacharya, this event reflects the true role of HR as a guide and decision-maker. Participants are tested through rounds focused on recruitment, conflict management, communication, and workplace ethics — showcasing people skills, negotiation, and managerial confidence."
   },
   {
-    name: "Marketing",
+    name: "Krishna Leela — Marketing",
     members: 2,
     image: eventMarketing,
-    desc: "Showcase your marketing brilliance through brand strategy presentations, ad-making, product launches, and live pitches. Create compelling campaigns and prove your market domination skills."
+    desc: "Like Krishna's charm and intelligence, this event focuses on creativity, communication, and strategic thinking in marketing. Participants face real-time marketing situations highlighting branding, promotion, market analysis, and customer understanding — proving their persuasion and innovative mindset."
   },
   {
-    name: "Finance",
+    name: "Guru Dakshina — Finance",
     members: 2,
     image: eventFinance,
-    desc: "Navigate the world of financial analysis, budgeting, stock market simulation, and investment strategies. Test your acumen in financial planning, risk assessment, and wealth management."
+    desc: "Symbolising commitment and respect towards knowledge, Guru Dakshina tests financial awareness, budgeting, analytical thinking, and practical problem-solving. Participants manage numbers confidently and respond with clarity under pressure to earn recognition as the top finance performer."
   },
   {
-    name: "Public Relations",
+    name: "Vidhur Neeti — Public Relations",
     members: 2,
     image: eventPublicRelations,
-    desc: "Craft press releases, manage crisis communication, conduct mock press conferences, and build brand reputation. Demonstrate your ability to shape public perception and manage media relations."
+    desc: "Inspired by Vidur's principles of intelligence and ethical guidance, this event focuses on managing public image, communication strategy, and crisis handling. Participants build connections, manage reputation, and communicate professionally with presence of mind and diplomacy."
   },
   {
-    name: "Creative Click",
+    name: "Sanjay — Creative Click",
     members: 1,
     image: eventCreativeClick,
-    desc: "Capture compelling stories through your lens in themed photography challenges. Express creativity, composition skills, and visual storytelling in timed rounds with surprise themes."
+    desc: "Like Sanjay who had the vision to witness every moment with clarity, this event challenges participants to capture moments with meaning, precision, and creative perspective. Go beyond normal photography and bring uniqueness to every click through powerful visual storytelling."
   },
   {
-    name: "Kalakruti",
+    name: "Chitrakala — Art Attack",
     members: 2,
     image: eventKalakruti,
-    desc: "Unleash artistic expression through poster-making, rangoli, collage art, and creative installations. A celebration of visual arts where imagination meets craftsmanship on the battlefield."
+    desc: "Chitrakala celebrates creativity, imagination, and artistic expression. Transform ideas into art with originality, precision, and visual appeal under time-bound challenges. Express emotions, tell stories through art, and showcase innovation and artistic excellence."
   },
   {
-    name: "E-Gaming",
-    members: 2,
+    name: "Eklavya — E-Gaming",
+    members: 1,
     image: eventEgaming,
-    desc: "Compete in intense esports tournaments across popular titles. Strategize, coordinate with your teammate, and battle through knockout rounds to claim digital supremacy."
+    desc: "Representing focus, dedication, and skill, Eklavya tests participants on speed, strategy, teamwork, and game sense in a competitive environment. Thrilling matches and high-energy challenges bring out the spirit of determination and smart gameplay."
   },
 ];
 
 const teamEvents = [
   {
-    name: "Treasure Hunt",
+    name: "Chakravyuha — Treasure Hunt",
     image: eventTreasureHunt,
-    desc: "Navigate the Chakravyuha — a campus-wide treasure hunt with cryptic clues, puzzles, and physical challenges. Teams race against time to decode riddles and uncover hidden treasures."
+    desc: "An exciting challenge testing teamwork, presence of mind, and problem-solving skills. Navigate thrilling clues and tasks that demand quick thinking, smart strategy, and strong coordination under pressure. The team that solves the trail with the best mix of logic and speed emerges victorious."
   },
   {
-    name: "Culturals",
+    name: "Rangbhoomi — Culturals",
     image: eventCulturals,
-    desc: "A grand showcase of group dance performances and ramp walk — combining rhythm, choreography, fashion, and stage presence into one spectacular cultural extravaganza."
+    desc: "A vibrant celebration of talent, confidence, and stage presence featuring Dance and Ramp Walk. Showcase energy, expression, style, and creativity on stage. Rangbhoomi is a platform for students to shine and create an unforgettable impact through performance and presentation."
   },
 ];
 
@@ -122,7 +122,7 @@ const EventsSection = () => {
               >
                 <img src={event.image} alt={event.name} loading="lazy" className="w-full h-auto max-h-32 object-contain mb-4" />
                 <span className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-2">
-                  Team of {event.members}
+                  {event.members === 1 ? "Individual" : `Team of ${event.members}`}
                 </span>
                 <p className="font-body text-sm text-muted-foreground italic">{event.desc}</p>
               </motion.div>
