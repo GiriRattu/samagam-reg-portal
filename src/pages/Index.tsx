@@ -13,7 +13,7 @@ const Index = () => {
         className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      <div className="fixed inset-0 z-0 bg-background/70" />
+      <div className="fixed inset-0 z-0 bg-background/50" />
       <div className="relative z-10">
         <Navbar />
         <HeroSection />

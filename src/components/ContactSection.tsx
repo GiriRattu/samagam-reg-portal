@@ -9,7 +9,7 @@ const SocialIcon = ({ children, href }: { children: React.ReactNode; href: strin
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="relative py-24 bg-ancient/80">
+    <section id="contact" className="relative py-24">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <div className="container mx-auto px-6">
@@ -35,7 +35,7 @@ const ContactSection = () => {
               <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
                 <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Address</p>
-                <p className="font-heading text-foreground">
+                <p className="font-body text-foreground">
                   KLS Institute of Management Education & Research,<br />
                   Hindwadi, Belagavi, Karnataka
                 </p>
@@ -45,11 +45,11 @@ const ContactSection = () => {
             <div className="flex items-start gap-4">
               <Phone className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
-                <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Registration Department</p>
-                <p className="font-heading text-foreground">
+                <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Registration Contact</p>
+                <p className="font-body text-foreground">
                   Giri Rattu — <a href="tel:+916362239058" className="text-primary hover:text-gold-light transition-colors">+91 63622 39058</a>
                 </p>
-                <p className="font-heading text-foreground">
+                <p className="font-body text-foreground">
                   Aadhya Bhat — <a href="tel:+917676288787" className="text-primary hover:text-gold-light transition-colors">+91 76762 88787</a>
                 </p>
               </div>
@@ -59,7 +59,7 @@ const ContactSection = () => {
               <Mail className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
                 <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Email</p>
-                <p className="font-heading text-foreground">
+                <p className="font-body text-foreground">
                   <a href="mailto:director@klsimer.edu" className="hover:text-primary transition-colors">director@klsimer.edu</a>
                 </p>
               </div>
@@ -88,7 +88,6 @@ const ContactSection = () => {
             <SocialIcon href="https://www.linkedin.com/in/kls-imer/">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </SocialIcon>
-            {/* Twitter/X */}
             <SocialIcon href="https://x.com/kls_imer">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
             </SocialIcon>
