@@ -16,14 +16,22 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-center gap-4 md:gap-6 mb-6"
+          className="flex items-center justify-center gap-4 md:gap-6 mb-2"
         >
           <img src={klsLogo} alt="KLS" className="h-14 md:h-20 w-auto" />
-          <h2 className="font-heading text-xl md:text-4xl lg:text-5xl tracking-[0.08em] uppercase text-gold-gradient leading-tight">
+          <h2 className="font-heading text-xl md:text-4xl lg:text-5xl tracking-[0.08em] uppercase text-gold-gradient leading-tight font-bold">
             KLS Institute of Management<br />Education & Research
           </h2>
           <img src={imerLogo} alt="IMER" className="h-14 md:h-20 w-auto" />
         </motion.div>
+
+        {/* Golden divider line */}
+        <motion.div
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ delay: 0.1, duration: 0.8 }}
+          className="w-48 md:w-72 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-2"
+        />
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -34,7 +42,7 @@ const HeroSection = () => {
           <img src={years35Logo} alt="35 Years" className="h-10 md:h-14 w-auto" />
           <div className="text-center">
             <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-0.5">(Autonomous)</p>
-            <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50">Hindwadi, Belgavi</p>
+            <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50">Hindwadi, Belagavi</p>
           </div>
           <img src={naacLogo} alt="NAAC A Grade" className="h-10 md:h-14 w-auto" />
         </motion.div>
@@ -54,7 +62,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
           className="mb-6"
         >
-          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-60 md:h-80 lg:h-[28rem] w-auto animate-float" />
+          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-72 md:h-96 lg:h-[32rem] w-auto animate-float" />
         </motion.div>
 
         <motion.p
@@ -86,20 +94,20 @@ const HeroSection = () => {
         >
           <div>
             <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Director, KLS IMER</p>
-            <p className="font-heading text-lg md:text-xl text-foreground">Dr. Arif Shaikh</p>
+            <p className="font-cinzel text-lg md:text-xl text-foreground">Dr. Arif Shaikh</p>
           </div>
           <div>
             <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Faculty Coordinators</p>
-            <p className="font-heading text-lg text-foreground">Asst. Prof. Goutami Maganur</p>
-            <p className="font-heading text-lg text-foreground">Asst. Prof. Rashmi Harti</p>
+            <p className="font-cinzel text-lg text-foreground">Asst. Prof. Goutami Maganur</p>
+            <p className="font-cinzel text-lg text-foreground">Asst. Prof. Rashmi Harti</p>
           </div>
           <div>
             <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Student Coordinators</p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-1">
-              <p className="font-heading text-foreground">Sahard Dongre</p>
-              <p className="font-heading text-foreground">Prajyot Ashtekar</p>
-              <p className="font-heading text-foreground">Prajwal Joshi</p>
-              <p className="font-heading text-foreground">Rajshree Bhadache</p>
+              <p className="font-cinzel text-foreground">Sahard Dongre</p>
+              <p className="font-cinzel text-foreground">Prajyot Ashtekar</p>
+              <p className="font-cinzel text-foreground">Prajwal Joshi</p>
+              <p className="font-cinzel text-foreground">Rajshree Bhadache</p>
             </div>
           </div>
         </motion.div>

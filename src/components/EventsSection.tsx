@@ -11,19 +11,67 @@ import eventTreasureHunt from "@/assets/event-team-events.png";
 import eventCulturals from "@/assets/event-group-dance.png";
 
 const individualEvents = [
-  { name: "Best Manager", members: 1, image: eventBestManager, desc: "Prove your mettle as the ultimate leader. One warrior, one throne." },
-  { name: "Human Resources", members: 2, image: eventHumanResources, desc: "Master the art of people management. Build empires through wisdom." },
-  { name: "Marketing", members: 2, image: eventMarketing, desc: "Unleash your strategic prowess. Conquer markets with divine persuasion." },
-  { name: "Finance", members: 2, image: eventFinance, desc: "Navigate the vaults of wealth. Command resources with foresight." },
-  { name: "Public Relations", members: 2, image: eventPublicRelations, desc: "Shape narratives and build alliances. The voice of the empire." },
-  { name: "Creative Click", members: 1, image: eventCreativeClick, desc: "Capture moments that echo through eternity. One frame, one story." },
-  { name: "Kalakruti", members: 2, image: eventKalakruti, desc: "Express the soul through art. Creative mastery on the battlefield." },
-  { name: "E-Gaming", members: 2, image: eventEgaming, desc: "Dominate the digital arena. Virtual warriors, real glory." },
+  {
+    name: "Best Manager",
+    members: 1,
+    image: eventBestManager,
+    desc: "A rigorous multi-round competition testing leadership, decision-making, aptitude, stress management, and overall managerial competence. Rounds include aptitude tests, extempore, stress interviews, and task-based challenges."
+  },
+  {
+    name: "Human Resources",
+    members: 2,
+    image: eventHumanResources,
+    desc: "Explore the world of people management through case study analysis, role plays, HR policy drafting, and mock recruitment drives. Demonstrate strategic thinking in talent acquisition and employee engagement."
+  },
+  {
+    name: "Marketing",
+    members: 2,
+    image: eventMarketing,
+    desc: "Showcase your marketing brilliance through brand strategy presentations, ad-making, product launches, and live pitches. Create compelling campaigns and prove your market domination skills."
+  },
+  {
+    name: "Finance",
+    members: 2,
+    image: eventFinance,
+    desc: "Navigate the world of financial analysis, budgeting, stock market simulation, and investment strategies. Test your acumen in financial planning, risk assessment, and wealth management."
+  },
+  {
+    name: "Public Relations",
+    members: 2,
+    image: eventPublicRelations,
+    desc: "Craft press releases, manage crisis communication, conduct mock press conferences, and build brand reputation. Demonstrate your ability to shape public perception and manage media relations."
+  },
+  {
+    name: "Creative Click",
+    members: 1,
+    image: eventCreativeClick,
+    desc: "Capture compelling stories through your lens in themed photography challenges. Express creativity, composition skills, and visual storytelling in timed rounds with surprise themes."
+  },
+  {
+    name: "Kalakruti",
+    members: 2,
+    image: eventKalakruti,
+    desc: "Unleash artistic expression through poster-making, rangoli, collage art, and creative installations. A celebration of visual arts where imagination meets craftsmanship on the battlefield."
+  },
+  {
+    name: "E-Gaming",
+    members: 2,
+    image: eventEgaming,
+    desc: "Compete in intense esports tournaments across popular titles. Strategize, coordinate with your teammate, and battle through knockout rounds to claim digital supremacy."
+  },
 ];
 
 const teamEvents = [
-  { name: "Treasure Hunt", image: eventTreasureHunt, desc: "Navigate the Chakravyuha. Solve riddles and claim hidden glory." },
-  { name: "Culturals", image: eventCulturals, desc: "Dance, walk, and express. Unite rhythm and style on the grand stage." },
+  {
+    name: "Treasure Hunt",
+    image: eventTreasureHunt,
+    desc: "Navigate the Chakravyuha — a campus-wide treasure hunt with cryptic clues, puzzles, and physical challenges. Teams race against time to decode riddles and uncover hidden treasures."
+  },
+  {
+    name: "Culturals",
+    image: eventCulturals,
+    desc: "A grand showcase of group dance performances and ramp walk — combining rhythm, choreography, fashion, and stage presence into one spectacular cultural extravaganza."
+  },
 ];
 
 const cardVariants = {
@@ -37,7 +85,7 @@ const cardVariants = {
 
 const EventsSection = () => {
   return (
-    <section id="events" className="relative py-24 bg-background">
+    <section id="events" className="relative py-24">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <div className="container mx-auto px-6">
@@ -70,7 +118,7 @@ const EventsSection = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="group relative bg-card border border-border hover:border-primary/40 rounded-sm p-5 transition-all duration-500 hover:glow-gold flex flex-col items-center text-center"
+                className="group relative bg-card/80 backdrop-blur-sm border border-border hover:border-primary/40 rounded-sm p-5 transition-all duration-500 hover:glow-gold flex flex-col items-center text-center"
               >
                 <img src={event.image} alt={event.name} loading="lazy" className="w-full h-auto max-h-32 object-contain mb-4" />
                 <span className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-2">
@@ -100,7 +148,7 @@ const EventsSection = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="group relative bg-card border border-primary/20 hover:border-primary/50 rounded-sm p-5 text-center transition-all duration-500 hover:glow-gold flex flex-col items-center"
+                className="group relative bg-card/80 backdrop-blur-sm border border-primary/20 hover:border-primary/50 rounded-sm p-5 text-center transition-all duration-500 hover:glow-gold flex flex-col items-center"
               >
                 <img src={event.image} alt={event.name} loading="lazy" className="w-full h-auto max-h-32 object-contain mb-4" />
                 <p className="font-body text-sm text-muted-foreground italic">{event.desc}</p>

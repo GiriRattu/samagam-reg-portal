@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -42,8 +42,8 @@
     --bronze: 25 50% 35%;
     --ancient: 30 20% 12%;
 
-    --font-heading: 'Cinzel', serif;
-    --font-body: 'Cormorant Garamond', serif;
+    --font-heading: 'Impact', 'Arial Black', sans-serif;
+    --font-body: 'Merriweather', serif;
     --font-accent: 'Rajdhani', sans-serif;
 
     --gradient-gold: linear-gradient(135deg, hsl(38 70% 50%), hsl(40 60% 65%), hsl(35 80% 35%));
@@ -94,6 +94,10 @@
 
   .font-accent {
     font-family: var(--font-accent);
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
   }
 }
 

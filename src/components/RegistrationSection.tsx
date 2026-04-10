@@ -3,7 +3,7 @@ import { Users, User } from "lucide-react";
 
 const RegistrationSection = () => {
   return (
-    <section id="registration" className="relative py-24 bg-background">
+    <section id="registration" className="relative py-24">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <div className="container mx-auto px-6">
@@ -24,7 +24,7 @@ const RegistrationSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="group bg-card border border-border hover:border-primary/50 rounded-sm p-8 text-center transition-all duration-500 hover:glow-gold"
+            className="group bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 rounded-sm p-8 text-center transition-all duration-500 hover:glow-gold flex flex-col items-center"
           >
             <Users className="w-12 h-12 text-primary mx-auto mb-6 group-hover:text-gold-light transition-colors" />
             <h3 className="font-heading text-2xl text-foreground mb-2">Group Registration</h3>
@@ -46,7 +46,7 @@ const RegistrationSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="group bg-card border border-border hover:border-primary/50 rounded-sm p-8 text-center transition-all duration-500 hover:glow-gold"
+            className="group bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 rounded-sm p-8 text-center transition-all duration-500 hover:glow-gold flex flex-col items-center"
           >
             <User className="w-12 h-12 text-primary mx-auto mb-6 group-hover:text-gold-light transition-colors" />
             <h3 className="font-heading text-2xl text-foreground mb-2">Individual Registration</h3>
@@ -57,7 +57,7 @@ const RegistrationSection = () => {
               href="https://forms.gle/KgiDGSxAUuvBBitW8"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block font-accent text-sm tracking-[0.3em] uppercase px-10 py-4 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300 rounded-sm"
+              className="inline-block font-accent text-sm tracking-[0.3em] uppercase px-10 py-4 bg-primary text-primary-foreground hover:bg-gold-light transition-colors duration-300 rounded-sm"
             >
               Register Individual
             </a>

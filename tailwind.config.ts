@@ -56,9 +56,10 @@ export default {
         ancient: "hsl(var(--ancient))",
       },
       fontFamily: {
-        heading: ['Cinzel', 'serif'],
-        body: ['Cormorant Garamond', 'serif'],
+        heading: ['Impact', 'Arial Black', 'sans-serif'],
+        body: ['Merriweather', 'serif'],
         accent: ['Rajdhani', 'sans-serif'],
+        cinzel: ['Cinzel', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
