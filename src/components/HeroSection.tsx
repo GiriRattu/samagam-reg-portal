@@ -16,7 +16,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-between gap-4 md:gap-6 mb-2 max-w-5xl mx-auto"
+          className="flex items-center justify-center gap-4 md:gap-8 mb-2 max-w-4xl mx-auto"
         >
           <img src={klsLogo} alt="KLS" className="h-14 md:h-20 w-auto flex-shrink-0" />
           <h2 className="font-intro-rust text-xl md:text-4xl lg:text-5xl tracking-[0.08em] uppercase text-gold-gradient leading-tight font-bold">
@@ -37,7 +37,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.15, duration: 0.8 }}
-          className="flex items-center justify-between gap-4 md:gap-8 mb-4 max-w-5xl mx-auto"
+          className="flex items-center justify-center gap-6 md:gap-10 mb-4 max-w-3xl mx-auto"
         >
           <img src={years35Logo} alt="35 Years" className="h-10 md:h-14 w-auto flex-shrink-0" />
           <div className="text-center">
@@ -62,7 +62,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
           className="mb-6"
         >
-          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-72 md:h-96 lg:h-[32rem] w-auto animate-float" />
+          <img src={samagamLogo} alt="Samagam Kurukshetra" className="mx-auto h-72 md:h-96 lg:h-[32rem] w-auto max-w-full object-contain animate-float" />
         </motion.div>
 
         <motion.p
