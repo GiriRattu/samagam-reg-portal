@@ -41,8 +41,8 @@ const HeroSection = () => {
         >
           <img src={years35Logo} alt="35 Years" className="h-10 md:h-14 w-auto flex-shrink-0" />
           <div className="text-center">
-            <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-0.5">(Autonomous)</p>
-            <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50">Hindwadi, Belagavi</p>
+            <p className="font-accent text-sm md:text-base tracking-[0.25em] text-foreground/80 mb-0.5">(Autonomous)</p>
+            <p className="font-accent text-sm md:text-base tracking-[0.25em] text-foreground/80">Hindwadi, Belagavi</p>
           </div>
           <img src={naacLogo} alt="NAAC A Grade" className="h-10 md:h-14 w-auto flex-shrink-0" />
         </motion.div>
@@ -51,7 +51,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="font-accent text-sm tracking-[0.4em] uppercase text-primary/80 mb-4"
+          className="font-accent text-base md:text-lg tracking-[0.4em] uppercase text-primary mb-4"
         >
           Presents
         </motion.p>
@@ -104,10 +104,10 @@ const HeroSection = () => {
           <div>
             <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Student Coordinators</p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-1">
-              <p className="font-cinzel text-foreground">Sahard Dongre</p>
+              <p className="font-cinzel text-foreground">Sharad Dongre</p>
               <p className="font-cinzel text-foreground">Prajyot Ashtekar</p>
               <p className="font-cinzel text-foreground">Prajwal Joshi</p>
-              <p className="font-cinzel text-foreground">Rajshree Bhadache</p>
+              <p className="font-cinzel text-foreground">Rajashree Bhadache</p>
             </div>
           </div>
         </motion.div>

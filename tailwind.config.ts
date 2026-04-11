@@ -56,8 +56,8 @@ export default {
         ancient: "hsl(var(--ancient))",
       },
       fontFamily: {
-        heading: ['Intro Rust', 'Impact', 'Arial Black', 'sans-serif'],
-        'intro-rust': ['Intro Rust', 'Impact', 'Arial Black', 'sans-serif'],
+        heading: ['Intro Rust', 'Playfair Display', 'Arial Black', 'sans-serif'],
+        'intro-rust': ['Intro Rust', 'Playfair Display', 'Arial Black', 'sans-serif'],
         body: ['Merriweather', 'serif'],
         accent: ['Rajdhani', 'sans-serif'],
         cinzel: ['Cinzel', 'serif'],
