@@ -16,13 +16,13 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-center gap-4 md:gap-6 mb-2"
+          className="flex items-center justify-between gap-4 md:gap-6 mb-2 max-w-5xl mx-auto"
         >
-          <img src={klsLogo} alt="KLS" className="h-14 md:h-20 w-auto" />
-          <h2 className="font-heading text-xl md:text-4xl lg:text-5xl tracking-[0.08em] uppercase text-gold-gradient leading-tight font-bold">
+          <img src={klsLogo} alt="KLS" className="h-14 md:h-20 w-auto flex-shrink-0" />
+          <h2 className="font-intro-rust text-xl md:text-4xl lg:text-5xl tracking-[0.08em] uppercase text-gold-gradient leading-tight font-bold">
             KLS Institute of Management<br />Education & Research
           </h2>
-          <img src={imerLogo} alt="IMER" className="h-14 md:h-20 w-auto" />
+          <img src={imerLogo} alt="IMER" className="h-14 md:h-20 w-auto flex-shrink-0" />
         </motion.div>
 
         {/* Golden divider line */}
@@ -37,14 +37,14 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.15, duration: 0.8 }}
-          className="flex items-center justify-center gap-4 md:gap-8 mb-4"
+          className="flex items-center justify-between gap-4 md:gap-8 mb-4 max-w-5xl mx-auto"
         >
-          <img src={years35Logo} alt="35 Years" className="h-10 md:h-14 w-auto" />
+          <img src={years35Logo} alt="35 Years" className="h-10 md:h-14 w-auto flex-shrink-0" />
           <div className="text-center">
             <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50 mb-0.5">(Autonomous)</p>
             <p className="font-accent text-xs md:text-sm tracking-[0.25em] text-foreground/50">Hindwadi, Belagavi</p>
           </div>
-          <img src={naacLogo} alt="NAAC A Grade" className="h-10 md:h-14 w-auto" />
+          <img src={naacLogo} alt="NAAC A Grade" className="h-10 md:h-14 w-auto flex-shrink-0" />
         </motion.div>
 
         <motion.p
