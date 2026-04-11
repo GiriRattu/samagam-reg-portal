@@ -28,7 +28,7 @@ const BrochureSection = () => {
           className="max-w-md mx-auto text-center"
         >
           <p className="font-body text-foreground/80 mb-8">
-            Download our official brochure to explore all events, schedules, and details about Samagam Kurukshetra 2026.
+            Download our official brochure to explore all events, schedules, and details about Samagam 2026.
           </p>
           <a
             href={BROCHURE_LINK}
