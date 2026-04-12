@@ -3,7 +3,7 @@ import eventBestManager from "@/assets/event-best-manager.png";
 import eventHumanResources from "@/assets/event-human-resources.png";
 import eventMarketing from "@/assets/event-marketing.png";
 import eventFinance from "@/assets/event-finance.png";
-import eventPublicRelations from "@/assets/event-public-relations.png";
+
 import eventCreativeClick from "@/assets/event-photography.png";
 import eventKalakruti from "@/assets/event-kalakruti.png";
 import eventEgaming from "@/assets/event-egaming.png";
@@ -36,12 +36,6 @@ const individualEvents = [
     desc: "Symbolising commitment and respect towards knowledge, Guru Dakshina tests financial awareness, budgeting, analytical thinking, and practical problem-solving. Participants manage numbers confidently and respond with clarity under pressure to earn recognition as the top finance performer."
   },
   {
-    name: "Vidhur Neeti — Public Relations",
-    members: 2,
-    image: eventPublicRelations,
-    desc: "Inspired by Vidur's principles of intelligence and ethical guidance, this event focuses on managing public image, communication strategy, and crisis handling. Participants build connections, manage reputation, and communicate professionally with presence of mind and diplomacy."
-  },
-  {
     name: "Sanjay — Creative Click",
     members: 1,
     image: eventCreativeClick,
@@ -49,7 +43,7 @@ const individualEvents = [
   },
   {
     name: "Chitrakala — Art Attack",
-    members: 2,
+    members: 1,
     image: eventKalakruti,
     desc: "Chitrakala celebrates creativity, imagination, and artistic expression. Transform ideas into art with originality, precision, and visual appeal under time-bound challenges. Express emotions, tell stories through art, and showcase innovation and artistic excellence."
   },

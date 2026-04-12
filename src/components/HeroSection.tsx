@@ -20,7 +20,7 @@ const HeroSection = () => {
         >
           <img src={klsLogo} alt="KLS" className="h-14 md:h-20 w-auto flex-shrink-0" />
           <h2 className="font-intro-rust text-xl md:text-4xl lg:text-5xl tracking-[0.08em] uppercase text-gold-gradient leading-tight font-bold">
-            KLS Institute of Management<br />Education & Research
+            KLS Institute of Management Education & Research
           </h2>
           <img src={imerLogo} alt="IMER" className="h-14 md:h-20 w-auto flex-shrink-0" />
         </motion.div>
@@ -81,7 +81,7 @@ const HeroSection = () => {
           className="inline-flex items-center gap-2 px-8 py-3 border border-primary/40 rounded-sm bg-background/40 backdrop-blur-sm mb-10"
         >
           <span className="font-heading text-2xl md:text-3xl text-gold-gradient">
-            29<sup className="text-sm">th</sup> & 30<sup className="text-sm">th</sup> April 2026
+            29<sup className="text-base md:text-lg align-super">th</sup> & 30<sup className="text-base md:text-lg align-super">th</sup> April 2026
           </span>
         </motion.div>
 
