@@ -37,8 +37,7 @@ const ContactSection = () => {
               <div>
                 <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Address</p>
                 <p className="font-body text-foreground">
-                  KLS Institute of Management Education & Research,<br />
-                  Hindwadi, Belagavi, Karnataka
+                  KLS Institute of Management Education & Research, Hindwadi, Belagavi, Karnataka
                 </p>
               </div>
             </div>
@@ -62,6 +61,9 @@ const ContactSection = () => {
                 <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Email</p>
                 <p className="font-body text-foreground">
                   <a href="mailto:samagam@klsimer.edu" className="hover:text-primary transition-colors">samagam@klsimer.edu</a>
+                </p>
+                <p className="font-body text-foreground">
+                  <a href="mailto:director@klsimer.edu" className="hover:text-primary transition-colors">director@klsimer.edu</a>
                 </p>
               </div>
             </div>
