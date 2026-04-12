@@ -81,7 +81,7 @@ const HeroSection = () => {
           className="inline-flex items-center gap-2 px-8 py-3 border border-primary/40 rounded-sm bg-background/40 backdrop-blur-sm mb-10"
         >
           <span className="font-heading text-2xl md:text-3xl text-gold-gradient">
-            29<sup className="text-base md:text-lg align-super">th</sup> & 30<sup className="text-base md:text-lg align-super">th</sup> April 2026
+            29<sup className="text-base md:text-lg align-super text-gold-gradient">th</sup> & 30<sup className="text-base md:text-lg align-super text-gold-gradient">th</sup> April 2026
           </span>
         </motion.div>
 
