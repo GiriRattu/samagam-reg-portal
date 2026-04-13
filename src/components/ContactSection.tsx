@@ -37,7 +37,10 @@ const ContactSection = () => {
               <div>
                 <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Address</p>
                 <p className="font-body text-foreground">
-                  KLS Institute of Management Education & Research, Hindwadi, Belagavi, Karnataka
+                  KLS Institute of Management Education &amp; Research
+                </p>
+                <p className="font-body text-foreground">
+                  S. No. 77, Adarsh Nagar, Hindwadi, Belagavi, Karnataka 590011
                 </p>
               </div>
             </div>
@@ -48,6 +51,9 @@ const ContactSection = () => {
                 <p className="font-accent text-xs tracking-widest uppercase text-muted-foreground mb-1">Registration Contact</p>
                 <p className="font-body text-foreground">
                   Giri Rattu — <a href="tel:+916362239058" className="text-primary hover:text-gold-light transition-colors">+91 63622 39058</a>
+                </p>
+                <p className="font-body text-foreground">
+                  Prajwal Joshi — <a href="tel:+919148313864" className="text-primary hover:text-gold-light transition-colors">+91 91483 13864</a>
                 </p>
                 <p className="font-body text-foreground">
                   Aadhya Bhat — <a href="tel:+917676288787" className="text-primary hover:text-gold-light transition-colors">+91 76762 88787</a>
