@@ -104,7 +104,7 @@ const HeroSection = () => {
           <div>
             <p className="font-accent text-xs tracking-[0.3em] uppercase text-muted-foreground mb-1">Student Coordinators</p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-1">
-              <p className="font-cinzel text-foreground">Sharad Dongre</p>
+              <p className="font-cinzel text-foreground"><p className="font-cinzel text-foreground">Sharad Dongare</p></p>
               <p className="font-cinzel text-foreground">Prajyot Ashtekar</p>
               <p className="font-cinzel text-foreground">Prajwal Joshi</p>
               <p className="font-cinzel text-foreground">Rajashree Bhadache</p>
