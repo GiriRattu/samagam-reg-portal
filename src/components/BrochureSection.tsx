@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const BROCHURE_LINK = "https://drive.google.com/file/d/19UCGJKBWMfdxNoO0y-0h8MrAXM1UX2He/view?usp=drive_link";
+const BROCHURE_LINK = "https://drive.google.com/file/d/1PixeDEGabNisLbX2dwfL8rL2eewrjv1N/view?usp=sharing";
 
 const BrochureSection = () => {
   return (
